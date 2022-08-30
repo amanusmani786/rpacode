@@ -1,0 +1,220 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Creating_Employee_ID_Card_Using_Word" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="753,3359" sap2010:WorkflowViewState.IdRef="Creating_Employee_ID_Card_Using_Word_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="62">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Creating_Employee_ID_Card_Using_Word" sap:VirtualizedContainerService.HintSize="704,3294" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="datatabl" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[datatabl]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="662,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="sheet1" WorkbookPath="C:\Users\User\Documents\DataTable.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[datatabl]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,3075" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2960" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="name" />
+              <Variable x:TypeArguments="x:String" Name="email" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="contact" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="id" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Name" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
+              <ui:GetRowItem.Value>
+                <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+              </ui:GetRowItem.Value>
+            </ui:GetRowItem>
+            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Email" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
+              <ui:GetRowItem.Value>
+                <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+              </ui:GetRowItem.Value>
+            </ui:GetRowItem>
+            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Contact" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
+              <ui:GetRowItem.Value>
+                <OutArgument x:TypeArguments="ui:GenericValue">[contact]</OutArgument>
+              </ui:GetRowItem.Value>
+            </ui:GetRowItem>
+            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="ID" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[CurrentRow]">
+              <ui:GetRowItem.Value>
+                <OutArgument x:TypeArguments="ui:GenericValue">[id]</OutArgument>
+              </ui:GetRowItem.Value>
+            </ui:GetRowItem>
+            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\User\Documents\Creating Employee ID Card Using Word.docx" sap:VirtualizedContainerService.HintSize="586,1968" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+              <p:WordApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WordDocument">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,1859" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Creating Employee ID Card Using Word.docx - Word" sap:VirtualizedContainerService.HintSize="510,1767" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="116a6c05-3aa7-4936-aff0-b4bacfb34100" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1478" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="116a6c05-3aa7-4936-aff0-b4bacfb34100" Text="[name]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="693, 346, 323, 46" FriendlyName="'item'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' /&gt;" Guid="f3f9b7fb-2486-488e-bc9f-43d3134e8afd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAyCAYAAADP0RmtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADMSURBVHhe7daJCYAwAARB+286xg8VtwNn4CRJAYvLAOBDHAHCMm0fMzObu+yn5wPAX4kjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgBBHAGCOAIEcQQI4ggQxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgBBHAGCOAIEcQQI4ggQxBEgiCNAEEeAII4A4RXH7WJmZscu/hwBTuIIEO4WjrECIundlia+rgkAAAAASUVORK5CYII=" InformativeScreenshot="77a5f860ffe0984b380bd8dbda71909d.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Creating Employee ID Card Using Word.docx - Word' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="370, 346, 323, 46" FriendlyName="'Name'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' check:fulltext='Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAyCAYAAADP0RmtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHBSURBVHhe7djRbSJBEEVRciEYYiEUYiAAAiEOYmH1MOUtz9aPB1jJ5hypbE9PT39etbw5Ho9XAL4SR4DB5vZjszHGGNOn4gjw7noLxRHgThwBBuIIMBBHgMHqOO52u9ve0+l0X/mQ9cPhcH8C+JkeiuN2u/1nvzgCv8FDcUwEE8gew2Uc9/v97cxM9pbcOLO3v8/a+Xz+fM67LvvrXT8L4NnSmbIqjglavrlcLl/WI797KHtI67vlc0Uv5+U5sYyEMmeXPC/jCfAsvYWr4lh/V6j6+lIPWmLYb38Vw4ps5Kzsix7KqBsmwCs8JY79lreMYwKYdzXfjWOd1c/oA/AKvS+r4xiJXtb6ev6uGMaam2OPY785ArzS0+IY+TbT49j35N3aOFZ8Af6H3sKH45jg5fv6P2EFr+aRm2PkuZ8nlsCrpDHlW3EE+M3EEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBmMcjTHGtKk4Ary73kJxBLj728Lr9Q8wB5t5jHvbWwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="116a6c05-3aa7-4936-aff0-b4bacfb34100" Text="[email]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="693, 391, 323, 44" ElementType="Cell" FriendlyName="'item'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='1' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' /&gt;" Guid="11ede0cd-d26b-4f7c-8f04-e7556d0f694d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAwCAYAAACCGbimAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVHhe7daJCYAwFAXB9N90vCIqbAfOwCP8BpaMuRvjfAB+7d1CcQRYPnE8DjMzu3bzcwRYxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgBBHAGCOAIEcQQI4ggQxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESB84ngcZmZ27ebnCLCII0B4WjjnBjECrzjhFIU1AAAAAElFTkSuQmCC" InformativeScreenshot="100b13b9f2adc2c7a1bf1070fb807dd7.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Creating Employee ID Card Using Word.docx - Word' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="370, 391, 323, 44" FriendlyName="'Email'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='0' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' check:fulltext='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAwCAYAAACCGbimAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGbSURBVHhe7djhbcJADIBRdmEYZmEUJmEQ5mAWWp+wapBLSwmBKu9JDpfklJ+fQlanT6vV+AFYtNpCcQQ4a+NojDGmTMYRYOlqC8UR4EwcARriCND4V3HcbrdjAJ7tz3HcbDZjb53dbne+O43j8Tieu9/vx7k4AnOJ9qS74zh1DH8ijsBcnhLHuBdve/GsnBBhy/PD4TCuhVjXvfVePRdHYC7RnjRpHOM58be4nuf++F2v12Mde3Id6r0gjsArPBTH2FsnXYcz1nEt5bfETr5FpliLIzC3iw6NwzfRunYdwOq3ccw3y7gf53VSrMURmNtFh8ahXLhlqjjmt8nkzRF4BxcdGody4ZYp41i/MUb8xBF4tYfiGHvrZLjuiWOozxJH4B1cdGgcygWApRJHgIY4AjTEEaAhjgANcQRoiCNAQxwBGuII0BBHgIY4AjTEEaAhjgANcQRoiCNAQxwBGuII0BBHgIY4AjTEEaAhjgANcQRoiCNAQxwBGuII0BBHgIY4AjTEEaDRxtEYY0yZjCPA0tUWiiPA2VcLT6cPBc2LP81GDSIAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contact'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="116a6c05-3aa7-4936-aff0-b4bacfb34100" Text="[contact]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="693, 434, 323, 47" ElementType="Cell" FriendlyName="'item'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='1' tableRow='2' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' /&gt;" Guid="63b2c0d5-cb91-4baa-9726-0745cc97b088" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAzCAYAAAAEjcoIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVHhe7daJCYAwFAXB9N90vCIqbAfOwCP8BpaMuRvjfAB+7d1CcQRYPnE8DjMzu3bzcwRYxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgBBHAGCOAIEcQQI4ggQxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgDhE8fjMDOzazc/R4BFHAHC08I5N51f4teH1BK4AAAAAElFTkSuQmCC" InformativeScreenshot="39b0b4b3532f6946188e0f0c250d80a3.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Creating Employee ID Card Using Word.docx - Word' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="370, 434, 323, 47" FriendlyName="'Contact'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='0' tableRow='2' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' check:fulltext='Contact' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAzCAYAAAAEjcoIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAITSURBVHhe7dndjRpBEIVRciEYYiEUIiEQ4iAW7IuodWlc/Aw8WDLnSCUYumd2nz71spvLb5vN9QXgq/UWiiPAzRhHY4wxbSqOAN+ut1AcAW7EEWAgjgADcQQYfBTH0+l03V+z2+1uK585Ho+X7XZ7u3pf/X4Aa/V2rIpjApa9CVA5HA7X+ZQ4Av/a23HMvkTskeyp6bHLfTll7vf7n/WKal7v3dc/X0Y4z6u1PLfi3QfgVb0ZL8exTmTn8/n2yd+y3gOWeNWf3RWuWl8+bzo55rrWl/sTw/4nfd5nzckReFdvx+o43jPFrd9zL37ZE9P6Up5V+/v77tnvCXBPb8f13SsxeRadxK2f5CInudyT13txzOcxrdfP7NPjWKfIThyBd/V2vBzHyL6K2dKjuMXaOFZYK4bRr5drRRyBd/V2rIpj/eOkn9gStfoeMWvL7xzz3WA8i+Myav3UGdmX6wpinj1957i8D+BVvUGr4hgVqZoeqApTTYUxnsUxct2fWTGuz7LeT4u1P7OMcj5b/jyAR9KNsjqOAP8rcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzEEWAgjgADcQQYiCPAQBwBBuIIMBBHgIE4AgzGOBpjjGlTcQT4dr2F4ghw86eFl8svyCFjwQZ09j8AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="116a6c05-3aa7-4936-aff0-b4bacfb34100" Text="[id]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="693, 480, 323, 43" ElementType="Cell" FriendlyName="'item'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='1' tableRow='3' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' /&gt;" Guid="453327fb-3943-4537-b1ee-a089c0eb0f59" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAvCAYAAABwmQjoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7daLCcQgFEXB9F+DvZo1HzBwOtgZuMhr4OAxf47jegD+2t5CcQR4fOK4DjMzu/fycwR4iCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESCII0AQR4AgjgBBHAGCOAIEcQQI4ggQxBEgiCNAEEeAII4AQRwBgjgCBHEECOIIEMQRIIgjQBBHgCCOAEEcAYI4AgRxBAjiCBDEESB84rgOMzO79/JlBNiMMa6JI8BmhXHOOU9dl6Z8ZGREfwAAAABJRU5ErkJggg==" InformativeScreenshot="fe2dab6d8d7da0ff15ccc43b298cfbfa.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Creating Employee ID Card Using Word.docx - Word' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="370, 480, 323, 43" FriendlyName="'ID'" FullSelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' tableCol='0' tableRow='3' /&gt;" FuzzySelectorArgument="&lt;uia role='table' /&gt;&lt;uia role='item' automationid='' check:fulltext='ID' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUcAAAAvCAYAAABwmQjoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEgSURBVHhe7drdbcIwAIXRbJfZMkkGyRyZxdSpIwW4L22xhMs50lWIEa+f+JvKl2k6LgAf7dpCcQRoYhzNzOyyM44An+7aQnEEaMQRIBBHgEAcAYJfx3Ge57IsS7v7ft3j9n1vzwKMpTbs9Oc4btvW7kpZ1/U4q1eA0XSLY3UGEmA0XeNYP1anc4B31zWOlTgCI+oaR+8cgVF1jaPvHIFRdYtjfVzP/FoNjOilcXyc/zkCo6oNO/0ojgD/mTgCBOIIEIgjQCCOAIE4AgTiCBCII0AgjgCBOAIE4ggQiCNAII4AgTgCBOIIEIgjQCCOAIE4AgTiCBCII0AgjgCBOAIE4ggQiCNAII4AgTgCBOIIEMQ4mpnZZUciAbgjjgBPSrkBjCwt734mzTIAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,213" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(tab)][u(hk)]" Version="V1" />
+                            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[name]" sap:VirtualizedContainerService.HintSize="434,109" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1382, 744" Arguments="c:\users\user\documents\creating employee id card using word.docx" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHJSURBVFhH7ZcvSENRFMZfkyE+LIoaNOkQwSAzOIOoiFHUIGgxGFZkxTLQothEEISJUVBEWDIsLSwsiOADlQUFkQXDgiIiBsNx3+XecSf3+p6PM5DhDz7YPds55+Pcs3/OP36MHz97FVGd5Mk2dgxJrJJt7JiSOCXb2DElcUq2sWNK4pRsYye+XyQ/jabvjcWDyOlYzHkVURh1LZ1TfyItTJiKBxEMGIsHVed0iqLJHA2s34TS3zGg6FvJV4uXyh8iNpwsVGMKdWYzcPv4JgrPbV2J82TqQpxB8qBYEysUX/gNnOafRPGdzIM4H2ZL4gyyl2URgxGA51Qem4GNoztRXDVTEwGv758ipkypiUBsBjB6gHvHnQOYgCGwvHstRg9wFewGIAWuAWAq+tgVeo4bW6X22bOa2G9UY0AfO8Ak8K4AuAagLyDEakAtIoAZFdeN6QsIsRpQiwjw2BTXFxBiNaAWEeiLpn8m6HGI1UAYNYSB0F/HbTMnFOmdJ3dkk1rH9kJJ/uyw09Q9QVb1TFEkulBfA82DCfKTG982Fg8i2cZOy9Aa/SQ3ljIWDirZxo4piVOyjR1TEqdkGzuVF3nfkxjl/9eswXGcL2IzjE/x0LYjAAAAAElFTkSuQmCC" InformativeScreenshot="bf9be814eca6188e7e3aa8d71342d2f8.png" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Creating Employee ID Card Using Word.docx - Word' /&gt;" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </p:WordApplicationScope.Body>
+            </p:WordApplicationScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
