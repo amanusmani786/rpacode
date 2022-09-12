@@ -1,0 +1,172 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Staruptogali_Extract_Data" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="807,1390" sap2010:WorkflowViewState.IdRef="Staruptogali_Extract_Data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Staruptogali_Extract_Data" sap:VirtualizedContainerService.HintSize="712,1325" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Check MCA Company Name Availability Details Search Status" sap:VirtualizedContainerService.HintSize="670,1233" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="05723824-b150-46fc-aa34-92d9f0e098c3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="636,1017" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="594,923" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'CheckMCAC Page'" sap:VirtualizedContainerService.HintSize="552,829" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="b25d42eceaf758e25d10b67a0ca508bb" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,683" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,591" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'CheckMCAC Page'" sap:VirtualizedContainerService.HintSize="434,499" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="40c38c1c20abe00a1bc5b8ec8c92fb9b" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;">
+                          <ui:BrowserScope.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,353" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Company Id' attr='text' /&gt;&lt;column name='Company Name' attr='text' /&gt;&lt;column name='State' attr='text' /&gt;&lt;column name='Company Status' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" NextLinkSelector="&lt;webctrl aaname='Last ›' parentid='pagination' tag='A' /&gt;" SimulateClick="True">
+                                  <ui:ExtractData.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc31698f-ffa1-4431-b91b-aa15a460ebb1" InformativeScreenshot="f3ff185adb25b1d47cfbfa32a71925e0" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                    </ui:Target>
+                                  </ui:ExtractData.Target>
+                                </ui:ExtractData>
+                                <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="E:\SaragurpalExtractData.xlsx">
+                                  <ui:WriteRange.StartingCell>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ui:WriteRange.StartingCell>
+                                </ui:WriteRange>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:BrowserScope.Body>
+                        </ui:BrowserScope>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f46b08d594ab7fcd2a090503cc7df18b.png" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;" Url="https://www.startupgali.com/company-list/?&amp;page=1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,257 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Scarap_Temp_Data" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="757,3069" sap2010:WorkflowViewState.IdRef="Scarap_Temp_Data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="78">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Scarap_Temp_Data" sap:VirtualizedContainerService.HintSize="767,3004" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="temp" />
+      <Variable x:TypeArguments="x:String" Name="humidy" />
+      <Variable x:TypeArguments="x:String" Name="wind" />
+      <Variable x:TypeArguments="x:String" Name="TimeStamp" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="725,1214" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7031ab97-bf33-4c0b-91e4-6629a728feb0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,998" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7031ab97-bf33-4c0b-91e4-6629a728feb0" Text="Bangalore Temperature[k(enter)]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/" DesignTimeRectangle="447, 312, 483, 34" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='gLFyf gsfi' aaname='Search' /&gt;" Guid="7ce5f0e9-e1aa-4bd8-8ab0-19e3fb303a55" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAecAAAAmCAYAAAD+zlPxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADESURBVHhe7dWxCYAwAABBR1HI/msJgjMkXRp7+eKKq36AP85rTACgw5wBIMacASDGnAEgxpwBIMacASDGnAEgxpwBIMacASDGnAEgZs/5ft5PBAD+Z84AEGPOABBjzgAQY84AEGPOABBjzgAQY84AEGPOABBjzgAQY84AEGPOABBjzgAQY84AEGPOABBjzgAQY84AELPnDAA0mDMAxJgzAMSYMwDEmDMAxJgzAMSYMwDEmDMAxJgzAMSYMwDEmDMApIy5AL6VtK4KtYhZAAAAAElFTkSuQmCC" InformativeScreenshot="f3cb413c5c060f0cee9ca5950194be38.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="550, 381, 127, 36" ElementType="Button" FriendlyName="'Google Search'" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;input' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='gNO89b' tag='INPUT' type='submit' aaname='Google Search' check:text='Google Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAoCAYAAADdRklLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVHhe7ZxLbtswEIZ7lD6CLlIgD7Q39CLXCBDkDF4YPoAXhg9gIEBWBQrkDIyHHI44Q4pSYkuFpH/xLUSRI3LmI5Us5C9fv105AAjIAAQlw/cfP931rxt3e/fb3d3/ATOGaky1pppnMlAjJFgeVPMohMhAlpQ6g/lDtVcy4FRYLlR7JUOpE1gOkAEIkAEIkAEIkAEIkAEIkAEIkAEIkAEIg8rwuH9zf/+lvLr1qtx3CPzz98/Fe714OvzX+StWW3cc+PkDyfDsdpQ8WwhO7u4paRuQs2Twcz24x6xtvPkrpipDrQirzau59+DWL3HnlcaxWMxx86Dup6fPcbP1fWOxsnmYnV4ratsaPhbTrO1EM39a18GtKR9072XrVtTui17ozzLs9tw/HXMhBpCBFtnXYE6WJNdeBxF0AptrL1aye6MYRRnsTu/YaSF2xzqqMe1abEyWPBWL2xqhkusoSWtuzufyMvhJm+O1DZtMIkmoT561X8aEZKudyAnLZSj0PZGfUpool6D6fiKmksUWvmW9ETU2kJ1SZzKODOYojQKUF09JCosuLlbiN/302JIMoV3PgemVTN7lPCbE7x9TS9UuQ7W4k5ShWKSE5DQYW4Y08Z+lmXN3TJEgrlEVNB8/Qxk6Jpm+GkZ+TfR/v1YKbZ7fHpNiGFk7ZJjfa8ITFppNlIvVCMDHr/Sz1yHO5f6ATJNZL2aIbYppx1Rj2mJzTioy5G1JvOnKEIjFSdGLJ1iA2CdbXExiwBYvfUb417JJmE1WKHB7rAxf7KY/YedfjanG07zCWsqyMLJhmDj/qcswPpRgnTDQnwnLkB/z1Xcu6GTCMpywRypEOItpywAuCmQAAmQAAmQAAmQAAmQAgpIBH94ul+zDW3ySv1yyT/LxYx3LhGqe/VhHFIIsgRTzh2pMtY4iZDKAZQMZAHPl3gF668WQN42UdwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Temperature'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7031ab97-bf33-4c0b-91e4-6629a728feb0" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+temperature&amp;sxsrf=ALiCzsYLUrooUWmB7reZpjiNo_QhrY9uyw%3A1662820406045&amp;ei=NqAcY9-iAoOoz7sP56iCiAE&amp;ved=0ahUKEwjflYLduIr6AhUD1HMBHWeUABEQ4dUDCA4&amp;uact=5&amp;oq=bangalore+temperature&amp;gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYPCtAWgAcAJ4AIABAIgBAJIBAJgBAMgBCMABAQ&amp;sclient=gws-wiz" DesignTimeRectangle="258, 308, 51, 60" ElementType="Text" FriendlyName="'23'" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' type='' class='wob_t q8U8x' /&gt;" Guid="c7616b2a-8513-43db-a762-8ca0371ca35c" InformativeScreenshot="d510cb229171fcdcf7db4854c8ded22a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore temperature - Google Search' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="188, 386, 79, 29" ElementType="Text" FriendlyName="'Temperature'" FullSelectorArgument="&lt;webctrl aria-role='button' id='wob_temp' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' id='wob_temp' tag='DIV' type='' class='ksb ksbs' aaname='Temperature' check:innerText='Temperature' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAhCAYAAAClWJfKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH/SURBVGhD7ZUxbsMwDAD7lBbIZ/KGIEvW/MBARj8gU+A5g6dsGb1k6Qv6H9WiRZmiaFd12LQNOBwQixJJneT45fVt5QwdTKYiJlMRk6mIyVTEZCpiMhUxmYpEmfvzu+tuU3Su3uSL/w1V67rrya2lmCLyzXxQ8Yfx92RuXX0lt5XGNyd3ubVu79dh/HwI47imj4f562MHcfo2NBXWIXPiWvpmHFzT56oxjn3Q2kCol4wPY1DX9wf5eqDPsYaPN0fsHcd9XczD1gcKZQ4iL8dtnJM0hNL4cxSYrkdRMV+Yj0IhTuuDEMwVNkU3A3EunMxh+ymRSQ8f840HnvvwlMnM5Hp8gdAAa0Yqhrcx/mb5xg2SvCw+5OMbk0mELZFJ4rT3CKyhwgtl4k3KmZdJN5zJZM1FwZBLqlUgk6/FGnfKhGeaN7JUJnnOUJdJc3EEmUQijidCNGSyfiXKX3N2CglLZLLDGRv+6jXO49LhaMqU+pX41gcoaYAKXiKTCmHrh/jUB2BCJukX80/J5PlB3oxMrJl9A5jgQpmeIaH4f7HoZrau8QcU8tG5nmGDUjyXGQ8b5/d1UmHYO/aYzm8qH5+T2QN7HNfkfqZk/jDSqT4DJlMRk6nIr8h8VkymIiZTEZOpiMlUxGQqYjIViTLdx85YiMlUxGQqksk07sdkqrFyn6HGpBA8k8ddAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[temp]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Humidity: 89%'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7031ab97-bf33-4c0b-91e4-6629a728feb0" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+temperature&amp;sxsrf=ALiCzsYLUrooUWmB7reZpjiNo_QhrY9uyw%3A1662820406045&amp;ei=NqAcY9-iAoOoz7sP56iCiAE&amp;ved=0ahUKEwjflYLduIr6AhUD1HMBHWeUABEQ4dUDCA4&amp;uact=5&amp;oq=bangalore+temperature&amp;gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYPCtAWgAcAJ4AIABAIgBAJIBAJgBAMgBCMABAQ&amp;sclient=gws-wiz" DesignTimeRectangle="419, 333, 24, 14" ElementType="Text" FriendlyName="'89%'" FullSelectorArgument="&lt;webctrl id='wob_hm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_hm' tag='SPAN' type='' class='' /&gt;" Guid="1f83d3ec-4e3b-45bc-acf9-fc97d55da1a1" InformativeScreenshot="8b23678f861b4cf2cb046e5857853e19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore temperature - Google Search' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="366, 332, 90, 16" FriendlyName="'Humidity: 89%'" FullSelectorArgument="&lt;webctrl aaname='Humidity: ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Humidity: ' parentid='wob_wc' tag='DIV' type='' class='' check:innerText='Humidity: 89%' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIUSURBVFhH7ZU9jsIwEIX3KLsSd+ACiDYnoELiAGgL6FNATxFRpeKa3njssd/YBvInrKxcPMnYY8/M5xfz9f2zUkWfVwGfSQV8JhXwmVTAZxKA36tz+1DnnQxYH++qqfdiboqq+qEux228truqpr2qise3k1p34zny65xN15uW6I9y2jWbz6xt1eFm5zH35qQuIm68Pg7+qRA8aGp+2s+wNLj2rg4bHvt+6XI4j66FxvoCbLyNCfmM1TDw4MRwzTj5RGewU2idfsvineNt8zrmXAN4zoOOrH/JhVifA0HnxJfGMa5+7DHoBc/QdXONIsdMbteaFbwDx0BxDcamKZMPG3z31IhaaH8athBdHtZlTZAED2uUxzu+qr155lAE3jkMxc2+Ay+g+ELDOIINDqM9+PsJeIrh/A6O3f9KOpZ6CfN5o1EeV7N/46lWzuXOmX4JMz81xr29wFMTA8ELB8a1phQbIoRtAXdPXfq54pzw3vNFRLH9NQk8NjUY/BjH29/mvyQFKVTck7wIUNCbmKd4fZbNiV/eSA0H74Ca+Ago7esB3n7OvIeA9ADPT4SYeyEJ2tQcX7ysxQtcjmN3GRg7TMPAdzKADKRDEiif9Q58t8YQCQa4GN1Hl43wDCRRp4AYysTzk4K9UF2JebGO81zL01z9BeAXopeQl6NlgbeOC7/KJWp5jv8nKuAzqYDPpAI+i1bqDxGtrnZUCuHaAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[humidy]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Wind: 18 km/h11 mph'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="7031ab97-bf33-4c0b-91e4-6629a728feb0" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+temperature&amp;sxsrf=ALiCzsYLUrooUWmB7reZpjiNo_QhrY9uyw%3A1662820406045&amp;ei=NqAcY9-iAoOoz7sP56iCiAE&amp;ved=0ahUKEwjflYLduIr6AhUD1HMBHWeUABEQ4dUDCA4&amp;uact=5&amp;oq=bangalore+temperature&amp;gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYPCtAWgAcAJ4AIABAIgBAJIBAJgBAMgBCMABAQ&amp;sclient=gws-wiz" DesignTimeRectangle="400, 349, 43, 14" ElementType="Text" FriendlyName="'18 km/h'" FullSelectorArgument="&lt;webctrl id='wob_ws' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_ws' tag='SPAN' type='' class='wob_t' /&gt;" Guid="f331a148-2e1b-4784-823a-82ebdecfe67a" InformativeScreenshot="4c36f3489a04c7df20f8ae287c89badb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore temperature - Google Search' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="366, 348, 90, 16" FriendlyName="'Wind: 18 km/h11 mph'" FullSelectorArgument="&lt;webctrl aaname='Wind: ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Wind: ' parentid='wob_wc' tag='DIV' type='' class='' check:innerText='Wind: 18 km/h' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVFhH7ZY9bsMwDIV7lBbIHXKBIKtP4CmAD5Ap3jM4e4bAU6deUxWpP5KiEzturUXDA2JJJvk+0nY+Pr92pmp7VfCFVMEXUgVfSBV8IUXwzfXHDOdj2jxczPCtrY2mOyjnZ2h/Hs3jfjF7ZU8Tnr+e+Hp7Mw9bF0ru0TML8ug6mu5uvbbg+WYa9cz7iuAzk1j8aAZqYKWhJeDxrIRLGu/ATDT/L8BDLoiBOf8RvDOVEsBE9+3J9NGogxGMxon39/X2Okxi3/qYoDihoz2TwKvT7AWx4VyjDYOoUY3BwLsG4Tm/3sVabSys312zJsJZuMf768IgEB5rRN7x/tGK0+R+uwaEtQSVg09FB2ho2u/R+xOQ18qbA4PA4zFYQRE8r9k1TtQTGol7cvDs72f+Voh9XBnMEDx0Hk3zwhJ4MgXRtPitXb+Q/lQ4+AmgIp8HJps1BtY1D3CNPsIe8frM3wox8BjUP5KsIEhEm2HFwScztDAER4tcWHQGHu4X4PLGhHO2MWdes8w/CZ56feIPr98UBw+dtkFhUtI0wSNpE9uEdHrmgM+KXFi0BJ+Bhng0N133eRhckX8KPORVGwJa6GFKAjxAhn8y3ExjP4r91X5gyEdlFnjlnbwGvASNjdDi0RpofbPAOwbR6zbgldcDSBgGzQPvr8M7mTz6GVRF2hlc8/HUaQeJGmIcsa6D59+yzcBXbaMKvpAq+EKq4Aupgi+kCr6IduYXWYSKIi8I9HgAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[wind]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[TimeStamp]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="7eef5b0a112942860e73bdab95f39332.png" Selector="&lt;html app='chrome.exe' title='Google' /&gt;" Url="https://www.google.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="725,1658" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="691,1572" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="649,1480" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="E:\Bangalore_Temp.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="615,1214" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="readtemp" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="573,167" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[readtemp]" />
+                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="[TimeStamp]" DataTable="[readtemp]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="573,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[readtemp]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="573,690" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="539,576" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CurrentRow.Item(&quot;Banglore Climate Data&quot;).ToString]" sap:VirtualizedContainerService.HintSize="497,287" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                              <Assign x:Key="Temperature" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item(TimeStamp)]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[temp]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign x:Key="Humidity" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item(TimeStamp)]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[humidy]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign x:Key="Wind" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item(TimeStamp)]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[wind]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Switch>
+                            <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[readtemp]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

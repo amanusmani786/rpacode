@@ -1,0 +1,324 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="884.8,2484.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="742.4,2812.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Check MCA Company Name Availability Details Search Status" sap:VirtualizedContainerService.HintSize="700.8,2720" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c1b150cf-f3af-44e0-8fa1-7a8614261575" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="667.2,2503.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="625.6,2408.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                <Variable x:TypeArguments="x:Int32" Name="counter">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:Int32" Value="1" />
+                  </Variable.Default>
+                </Variable>
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'CheckMCAC Page'" sap:VirtualizedContainerService.HintSize="584,2314.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="a0c1ff953a6a2ed9b1142ec508d94a5e" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,2127.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Name="read_dt" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Company Id' attr='text' /&gt;&lt;column name='Company Name' attr='text' /&gt;&lt;column name='State' attr='text' /&gt;&lt;column name='Company Status' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="508.8,52.8" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="5" SimulateClick="True">
+                        <ui:ExtractData.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8d2d2df3-cde2-4953-86ec-02c87526fa66" InformativeScreenshot="63b9f26e307920d8c7ee237b4bb6acc7" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:ExtractData.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:ExtractData>
+                      <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="508.8,52.8" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet2" WorkbookPath="New Microsoft Excel Worksheet.xlsx">
+                        <ui:WriteRange.StartingCell>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:WriteRange.StartingCell>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:WriteRange>
+                      <ui:ReadRange AddHeaders="True" DataTable="[read_dt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="508.8,52.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet2" WorkbookPath="New Microsoft Excel Worksheet.xlsx">
+                        <ui:ReadRange.Range>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:ReadRange.Range>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:ReadRange>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[read_dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="508.8,1756" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,1640" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[counter+1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Check MCA Company Name Availability Details Search Status" sap:VirtualizedContainerService.HintSize="433.6,1447.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="cbe22686-fe57-45cf-b6d0-bcea41d7fba4" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1230.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="abc" />
+                                        <Variable x:TypeArguments="x:String" Name="Date_incorporation" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  company_name'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[CurrentRow(1).ToString]">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="79365474-2257-49f6-92dd-44cda6cfc4e1" InformativeScreenshot="0af954a4737b46014906ab13a7e632fa" Selector="&lt;webctrl id='company_name' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                      </ui:TypeInto>
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="910206e2-7af5-409c-ba7b-9027451b6d8b" InformativeScreenshot="6b61538bdb086fa90974272ee2bc6557" Selector="&lt;webctrl aaname='Submit' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' type='submit' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab6a6379-1848-4195-a9c9-f266ebf5793b" InformativeScreenshot="c34ec99c1a1de08acbd87a80a0af83c0" Selector="&lt;webctrl parentid='CompanyList' tag='A' aaname='*' parentclass='dropdown-menu' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <uix:NGetText DisplayName="Get Text 'CIN No.'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="cbe22686-fe57-45cf-b6d0-bcea41d7fba4" ScrapingOptions="None" Version="V1">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.startupgali.com/company/sant-lahanuji-farmer-producer-company-limited/U01100MH2020PTC339211" DesignTimeRectangle="648, 340, 767, 44" ElementType="Text" FriendlyName="'U01100MH2020PTC339211'" FullSelectorArgument="&lt;webctrl aaname='U01100MH2020PTC339211' parentid='companyinformation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='companyinformation' tag='DIV' type='' class='col-sm-8' /&gt;" Guid="7ecd909a-689c-4d16-b935-b739325ef1ce" InformativeScreenshot="9de36e8dc49d8cc0ea4f2fef179098c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SANT LAHANUJI FARMER PRODUCER COMPANY LIMITED | StartupGali' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="265, 340, 383, 44" ElementType="Text" FriendlyName="'CIN No.'" FullSelectorArgument="&lt;webctrl aaname='CIN No.' parentid='companyinformation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='CIN No.' parentid='companyinformation' tag='DIV' type='' class='col-sm-4' check:innerText='CIN No.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYMAAAAwCAYAAADzTRZ9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQTSURBVHhe7dy/axNhGMBx/6dMGQoFoeDQqVksOATBIhgIKILBpQhSQY4MwUEqSKZSKMl0glQQMmUoNwjXxULhBuFAOOgQKITH5z3b5nJ5L7n8EJL4HT5D73Jp0uH93ntv7+71+30BAPzfiAEAgBgAAIgBAEARAwAAMQAAEAMAgCIGAABiAAAgBgAARQwAAMQAAEAMAACKGAAAiAEAgBgAANR8MbjuSfS7Z98HAFgZ08cg8sWtv5DdB0UpFAp3NndeiNP2JLxOvf5XSyq63zmzbS/p9kkx8cTR4yvt0LJvlFcvSLHakiD9OVLCdkU/tyOeZR8A/G+mikHwdV92N3SwfViTRrsj/mWkM4NIwgtP3OMD2btv9jnSCRPHjY2BhmSjIq0gtW/I9DEwcSrVPelZ9t8iBgAwkDsG0bd92SwUpfzJkyjrrPs6kFa9Kf5VYtuEGBQ3dIaxo4Ny8pghM8RA37Oon7XSDqyvMYgBAAzki8HvU6npjGDS2bbVhBg433Ww3xl3aWeGGDxrSVcH++KYy1CTYtALfOm0m9L40JDGsSveRWR9HQCsg1wxCI7LerZ9IN2eff9Yk2Kg23tnjpTMgH9iO5OfLQahmaVUddax7UjXMuvIjIEed/pmN55ZbD2uiaMxOHi+K1saw82nTfGi1OsBYA3kiEEoblUH2Pddy74ccsTA/BxknsnPGAPz81X2rMMeg5503prLVvviXia3q8iXIxOXnYZ4s0QRAJZYjhh40tCz4ryD8YicMTADsVcvWRaU54iBEejvsVzissbgx6Fsa5AOzxPbkq46cqDvVT7OXosAgFW0RDFQt5d2hhaU54yB+nsZanhB2RYD/9O2FJ7oLCKxLc3/qK+pukPvDwCrbmkuEw22u/GZfPHVqUTxtvljEM86PuisI3HWb4tBfKzOIAbHjcpcawCAFbYUC8hD29XwmfwiYqBSs47MGLztjP2PqeBkTwqPjuSnZR8ArKpcMfin/1pqiYExWFDuLCYGRmJBuXsyGoM4EGOjF4n7Uo9/153+7wAASyxfDFSum86ufspRfbqbzrJiMFhQNjeQLSgGxs2CcnyzW/pyz80CcVb0wi+1OFCZC8wAsKJyx8C4exzFg4o46cdRfK5JeYbHUWTHQF37cqhn8ubxEguLgYq+mkHdvO/otf/eWSP+jqXnTelchPH3iy59cT/uxTEcuqv5/DC+nLVnvT8CAFbHVDGI3TyorqQD/8iD6r74o7OGeWJg3JzJLzIGd7OOrIXgX11pvi7r4H/7/YqyVXXEPU/dhUwMAKyJ6WOQxCOsAWAtzBcDAMBaIAYAAGIAACAGAABFDAAAxAAAQAwAAIoYAACIAQCAGAAAFDEAABADAAAxAAAoYgAAIAYAAGIAAOj35Q9UF5YvgxWTwwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                        <uix:NGetText.Text>
+                                          <OutArgument x:TypeArguments="x:String">[abc]</OutArgument>
+                                        </uix:NGetText.Text>
+                                      </uix:NGetText>
+                                      <uix:NGetText DisplayName="Get Text 'Date of Incorporation'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="cbe22686-fe57-45cf-b6d0-bcea41d7fba4" Version="V1">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.startupgali.com/company/abnr-organic-foods-private-limited/U01100KA2020PTC133644" DesignTimeRectangle="648, 433, 767, 44" ElementType="Text" FriendlyName="'02-04-2020'" FullSelectorArgument="&lt;webctrl aaname='02-04-2020' parentid='companyinformation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='companyinformation' tag='DIV' type='' class='col-sm-8' /&gt;" Guid="c268465f-02fb-4348-9047-a801361ffb1a" InformativeScreenshot="e3cba8b33db29f4ae2a26dfaf8b45712.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ABNR ORGANIC FOODS PRIVATE LIMITED | StartupGali' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="265, 433, 383, 44" ElementType="Text" FriendlyName="'Date of Incorporation'" FullSelectorArgument="&lt;webctrl aaname='Date of Incorporation' parentid='companyinformation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date of Incorporation' parentid='companyinformation' tag='DIV' type='' class='col-sm-4' check:innerText='Date of Incorporation' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                        <uix:NGetText.Text>
+                                          <OutArgument x:TypeArguments="x:String">[Date_incorporation]</OutArgument>
+                                        </uix:NGetText.Text>
+                                      </uix:NGetText>
+                                      <ui:WriteCell Cell="[&quot;E&quot; + counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet2" Text="[abc]" WorkbookPath="New Microsoft Excel Worksheet.xlsx" />
+                                      <ui:WriteCell Cell="[&quot;F&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet2" Text="[Date_incorporation]" WorkbookPath="New Microsoft Excel Worksheet.xlsx" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0ffc6d84e7fad6ad0695be27ff4b94ec.png" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;" Url="https://www.startupgali.com/company-list/?&amp;page=1" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a46477e4daba5812d97a96926249cfc4.png" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;" Url="https://www.startupgali.com/company-list/?&amp;page=1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

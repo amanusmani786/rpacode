@@ -1,0 +1,331 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Scaraping_Data_From_Company" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1014,4908" sap2010:WorkflowViewState.IdRef="Scaraping_Data_From_Company_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="78">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Scaraping_Data_From_Company" sap:VirtualizedContainerService.HintSize="1024,4843" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Check MCA Company Name Availability Details Search Status" sap:VirtualizedContainerService.HintSize="982,4751" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="7a324a33-24d1-4ba6-812d-a2ee758606f1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="948,4535" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="906,4441" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="readdata" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'CheckMCAC Page'" sap:VirtualizedContainerService.HintSize="864,4347" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="68590bf0a2557ae08dca2992b3b9f819" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="830,4201" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Name="Rowcounter" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Company Id' attr='text' /&gt;&lt;column name='Company Name' attr='text' /&gt;&lt;column name='State' attr='text' /&gt;&lt;column name='Company Status' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="788,106" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100" SimulateClick="True">
+                        <ui:ExtractData.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8d422ff9-8842-4fd2-8ceb-53f3a8aae195" InformativeScreenshot="6dace06eed364b9a70853e71b42e01cc" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:ExtractData.Target>
+                      </ui:ExtractData>
+                      <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="788,115" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="E:\New_Scaraping_Data.xlsx">
+                        <ui:WriteRange.StartingCell>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:WriteRange.StartingCell>
+                      </ui:WriteRange>
+                      <ui:ReadRange AddHeaders="True" DataTable="[readdata]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="788,87" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="E:\New_Scaraping_Data.xlsx">
+                        <ui:ReadRange.Range>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:ReadRange.Range>
+                      </ui:ReadRange>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[readdata]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="788,3681" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="3">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="754,3567" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Int32" Name="counter" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="712,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[counter+1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: InstaFinancials - Indian OPC, LLP, Private, Public Company Information" sap:VirtualizedContainerService.HintSize="712,3375" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V2">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="678,3159" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="cincomp" />
+                                        <Variable x:TypeArguments="x:String" Name="emailget" />
+                                        <Variable x:TypeArguments="x:String" Name="findtxt" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'Search Company by Name'" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" DesignTimeRectangle="165, 155, 190, 39" ElementType="Button" FriendlyName="'Search Company by Name'" FullSelectorArgument="&lt;webctrl id='ddlMenuButton' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ddlMenuButton' tag='BUTTON' type='button' class='btn isExtNav__inputs--btn dropdown-toggle u-border-radius-1 u-bg-blue--op2 u-fs-14 u-text-color-primary' aaname='Search Company by Name' check:innerText='Search Company by Name' /&gt;" Guid="bfa23a3b-ed4d-437a-aa6c-1aae58f5141b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMIAAAArCAYAAAAqqld7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ2SURBVHhe7Z07chNBEIa5GYly7uFAKQcwiZ0qFM5M4FCRCF3lKp/AgU3Kw9iGMyw90zs73TM9o31IGLQ/VV8Vu/Pqx/+Plog3P55/NQDMHRgBAKIzwv3Dl+bu7g6A2eA0//jyWxvBmgjAseO07/7ACGDWwAgAEDACAASMAAABIwBAwAgAEDACAASMAAABIwBAwAgAEDACAASMAAABIwBATDDCtlm+PW/edKyasxtr3iHhGJYba6zAzVWzUHETp1t77v+Oz3V6X67XK6rTRXNZGjuC+o00wm1zdnLeLNa38d3m4hUKMswIl6eWYY1cjoW9GsG+MOZthD0VeDoDjOCM+k/E/BfZpxFOL3yt0wvjtY3w4eNnNmmBd+8/metSxhkhfBZVCtDdIh79s6rHZKPcvvS8iZ8vQeT2mtYI6zi/JHb/a9CzYfzLYe2Xx+eF4U3Wzj+5aq7bfYJIVOwqhraOxpiLYbHe+l+rMM4i5DWmIMXZnmAEEW/oBceUfu609UwulpCHdZl0Y/K5O2t87fK97E8zR8kMfU3gGGmEWsJhTATukg1JuubIhOVYEIZZEFkI+pwhkVjzvYiT9UM+f7L1qvnpeemzPifUKJ7L84PQ3FlRdLxWjqm6yjj832U93L66Bx5vBJ1PzC+viY9XGTV/n/ZCrRnU2z61K2jIIDXDEBM4RhshwAHz4ZyEbijj3hmNcvhmhYS1UJi8YRFjfiYSR20PiSUouTY9L9/XC02KJmmeHE9xY2GvfJ48m88NcVjneMIvgsxHvjOEqmvPKLG3Z4d1eiyh2tta7XR+cX5BQy3BDENN4JhshEBsBicczCHpEvMFkmM1I5QbZI6ZRqgLsMMSDhHXDmmmLdD0nZ/va8D0M4LcxxJNyy4jyD0rN24udl7nYs3Geve2VjueK+sSMPPcA3szQixkpTFhnhSqL1zNCHnBIsb8ghH4ff1G4f3SOfL8Ic20jRDH7bXheZcRumf6R2xJwKYRkvpwjPQP4UrPciMQreAXdEt3Y4N6W6sdj5XiOQTjjOASVsXXSVkCuL4RY6Ko/rlqhHQOQQVe+rOM+SUjEL7QmdD1Hn6OjF0ZaEgz7bideHi920vGwnv3N0LYP8lfos5zcLzWvkUzEWnP1Hu3VuYr5un8R9SuoKFDMMoIl5ttK6qITMjRFSmM060jxRTXkah3GMGhz1uREbZUJGN+xQhxXO7F62WR07NSsQ5r5sqLUZ4V5uoaUX3oeYgR9I1r0I4vZT6G4N1Zaf8kPk4VS0THOaS39do5yhraP6OMAPrBRijftFPZJeBe7DLTTIARDsghjcC35VQB8y092UxHAIwAAAEjAEDACAAQMAIABIwAAAEjAEDACAAQMAIABIwAAAEjAEDACAAQmRHwv2qCuXH/8NA8vrD+OyMAMDe+P700334+N18fn2AEMF+iEZ6aP3tWmAKtxpMDAAAAAElFTkSuQmCC" InformativeScreenshot="ad58fdde1e0521c9921907d9a8ff4e84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'Search Company by Name'" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" DesignTimeRectangle="174, 205, 190, 32" ElementType="Button" FriendlyName="'Search Company by Name'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' parentid='companySearchNav' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='companySearchNav' tag='BUTTON' class='dropdown-item' aaname='Search Company by Name' check:innerText='Search Company by Name' /&gt;" Guid="2ffc866c-3e81-4105-b85a-8edaf2cb006b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMIAAAAkCAYAAADb/OWuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQtSURBVHhe7Ze9ahVRFIV9FBsLn8FG8AEUFC1FFC0FwU4QO0HsBLEKYuVPOtFXUF/BdBq7WKYdzzdkhcXOuT/xzk1Isj4YZuacM/tn7bNn7j03hBCGNEIIjTRCCI00QgiNNEIIjTRCCI00QgiNNEIIjTRCCI00QgiNNEIIjTRCCI00QgiNyRphZ+fvcO3GreH8hYvjcenyleHn1tbe7NGgGL59/7E3shhiJFbFzfH8xcu92dMFuV69fnPlurz/uDnqjN4V5k6ifpM0wu7u7vDw0eNRBMFmPGpBDtsIxFcbtpfLaWHKRpj1wjjTjTCVwKtymEZgzXF8tY6TKRuBlwVa1xfGmW4EbcB5AugtwlE/qz7nm5PznXsPhs9fvh6Y6z2jODbevhvH6jMOsS5TMNmULzYAXw3NKT75Iy6arLdem8Rj9xj8OQ5vaNaRF/Y0jx3Fx7XDvfsGdKARPF7VgvW1LrJdXyysJZ7ey0RzgnvF62s5e205sOfr3Q5wr7ma26pM9h9hVsLAnItMwkqEdU+ePttPqs5hqwpS7bEWQVU4F4lnq2hcM4adecier3N71V+9r344o4/utZ6cuWYtZ9BG0T1+XVffhFxjR2s586zWCump+ED5yL/nynXVHnyca/ftc/hbtrb1HnvSBhj3uGfF9r9M1giCANUQXGszKCFgDIFqoYAxbQCu66dc9rBdqeJB3SQwz4bjhRMeU/XXs0uxVDDGqz2fd7Dtm7muc9/yqzh6fqCnp495vj0tBfYVi3zrOZ+r4GNWbedpWbUAxpjnPAWTN4JQMba3/4wJqjn8UNIkyNtA46zviQVVMKc3x7XsOXVj9ehtKPdR/XnxhPvp2fMx2ZMOeuNDjbf6lh3GObsGoqenj7lNjhqrwFcvFsbrHHaXqW3Nx7WsNnS4PquytkaQkPMKA4xLHCCxdX8RgPFFQrKmbgaPqfrrxeYbmPFqT/M1V2wv+0Xwe9ZUH6L6gKoPMeKXQ7YrrPFYAJvoefvu/f25aps1s2pb83EtmXMt1sEkjUDwLn7dEL0N8Ov39niuonIv8apYwtcA8/4fwQtYi+HgtzaD29C18gDfaNVfzRtYr/x6ceOf5zlcI+49NrcD1TdgnzeljznuDxRvz26tl4Mff0bIv+fr6zx/Ylm2EQA71af20BRM1ggE6Z8tJSAkkg6SRAQJoPFXr9+Mcz2xHPdHcT982tz/GeYbgWuJ34N52dHBmESu8fkGWVQ88AIyTj7E675Az2qc/1D+P8rtQPUNrNUbt4fm3Y/nI/BT6+cw57E4HmfVbl5tl9VStjjQZ1auh2VtP43CQShqb+NNxaINvAyLmum0kkY4QtbZCNjmjbrKBtZbedVmOomkEUJopBFCaKQRQmikEUJopBFCaKQRQmikEUJopBFCaKQRQmikEUJopBFCGIbhH6287/RmXYXPAAAAAElFTkSuQmCC" InformativeScreenshot="cf5398d811545f937309ce846164bb6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT txtSearchBox'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="636,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Text="[CurrentRow(1).ToString + &quot;[k(enter)]&quot;]" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" DesignTimeRectangle="343, 155, 861, 39" ElementType="InputBox" FriendlyName="'INPUT txtSearchBox'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='isExtNav__inputs--search' aaname='' /&gt;" Guid="6bb18f45-0b32-4bc4-ae5f-04ea97759d19" ImageBase64="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" InformativeScreenshot="c642ea305c0c72a3c980cf7e9c371075.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'INPUT txtSearchBox'" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" DesignTimeRectangle="343, 155, 861, 39" ElementType="InputBox" FriendlyName="'INPUT txtSearchBox'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='isExtNav__inputs--search' aaname='' /&gt;" Guid="6432e58f-07d3-4590-9019-1008ce82bd6d" ImageBase64="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" InformativeScreenshot="9a7fe212cd0f5537958033b9f6458746.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="636,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'ACTIVE'" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" DesignTimeRectangle="1141, 227, 54, 27" ElementType="Text" FriendlyName="'ACTIVE'" FullSelectorArgument="&lt;webctrl aaname='ACTIVE' parentid='anmolagriculture-farmers-producer-company-limited_U01100BR2020PT*' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ACTIVE' parentid='anmolagriculture-farmers-producer-company-limited_U01100BR2020PT*' tag='SPAN' type='' class='isExtNav__searchView--compStatus u-text-color-green u-bg-green--op1' check:innerText='ACTIVE' /&gt;" Guid="ec92d4db-06d8-4796-b3af-8f874a7ba045" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAfCAYAAAC22t6tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGgSURBVFhH7ZQxTgMxEEVTU8MpuASngIqKnIAT0NNQwgU4QIRACg0F0CFEkQKJAgkoUiQFDaXRW+mjYWJvvGJpvB7pa9dje2berL2jMBAbHujH17JIySpoKZJV0FIkq6ClSFZBrXbuj8LoYjeMn06j8+fvt2Hjar9ZIx2/TBpZn9XWdBzuFs9NTMasVR7efQ6t46l3r9g+2VpQiqEoAm3fHIbZ59uveSXVHOIdcBrg1/lirF+5ALZrFNM2x8dPSbYWlAIIuvdwslKovqQvLKYcUMbE8hA+z7+AEpxuXs4fV7rdJWEuKE/G+O0am6dLXlkrqDqppDx1fBgDbcdtYm8OqI6vroIfa0+voD6gwCnK3xu/1ysXVD7lxR/7wvis7LyVLAkqEB8Q6fjyzO1sDCjlV0OZi50a/Ll5ZUlQm8z6bRKtsfc2pRhQyq8mb04PovF7BU0F8w2gCArVHUod6S6giDH+1J5eQAWj4u1cDMQWhdh79nr9J1D2kiP2D9AeLx8DyVp/RiVIVkFLkayCliJZBS1FsgpaimQ/oKXbQEBD+Abn6qbGTIHVnAAAAABJRU5ErkJggg==" InformativeScreenshot="97096497ccb076d553b5b109d596b597.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'Directors'" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/company/anmolagriculture-farmers-producer-company-limited/U01100BR2020PTC045849" DesignTimeRectangle="360, 223, 97, 44" ElementType="Text" FriendlyName="'Directors'" FullSelectorArgument="&lt;webctrl aria-role='tab' id='directors-tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='tab' id='directors-tab' tag='A' type='' class='nav-link' aaname='Directors' check:innerText='Directors' /&gt;" Guid="c689488e-ea03-46ef-b83c-99e5127181be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAwCAYAAAAIP7SLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM/SURBVHhe7ZdPaxNBGIfzzQRPvfQi9CJepFBSBKWihfaQi9JDFHJIKMV6yCUUIYH2EBGVEEMIpC20KmWhVLGpSojZQj7Bz5ndnc3sZpLsbmJ5kTfw0GR23vn3zDuzTYE/5D4sheAnNRgMwNAidXh4CIYWKdu2wdCCpRCEpRCEpRCEpRCEpRCEpRCEpRCEpRCEpRCEpRCEpRCEpRBkNim9LjqXP9DpGp4xiUkspdMuYvneKm4vSdawUbWM9SJzXkHaaStEoRGoVy/I8gxK51rsf0YyKb0WcvdDi7e0ieKZoW5UPCnp8lCuVc64ba9XYDllFkrrbn/ZphY7F9y2599ufJJJGbOrZ5qQQYpDM++0PVI+dxrIzjqHOZEwU8QE7oalzD9TXFR25FEXv93scb+rmGxZbRJ1rA0zalRo8JlzPHrihwyPR/e4VHj9SpwYUa+sYvXxGerHIPmdIgZ1x+98Fcu7LXQM9SIzVkrwHjFJCd4xatG9MiXOyYDQMz07PDF6pighwVivb1+ktvChOcj4JBkeW4pVfYGCGGSr/Br77QY+vKuhLv4Wdw7w2apgY7uRTM4MUgIxhjInXmbEhD5GpbjCAi8aeh2DRNV++OUkLvGkXFbxxBuI2kWShXQepaML8byG5ytryLUNsdMYu2DBHTpVir+DQ8iXBdNChuL8Z6a29bIxbd388fVJDGQlh7ffbXz7mPOOr6d49eUn6jsZPNw7QUeW7x6Z4ycxToo3eVUeNVOMCz+uD8nIIifIFJ1JfU0hlhS5ILKT470tFE/1HdxyL365G+VgkqSvYRL+rvNfiSNIEejHnfrtLp7pTgnePXpb6jQIxnp9G6XI9oJjS3KUxZLSqW5h4dkBrJ74ffYGaSniQRHHva8oPhbfX9ZgX71HZrtljJ+ImkSY0KSiSBkuoCLvvKGF/9dx25cbabRcLbZ+TPv9SkxSmmI8gbaT3S3xjq9fJyhlN7E48jo8ZPFRDvuWIZaJTDwpzI3AUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgjCUgiSSt3KQvK712eI4Eu56F3jqn+Nbt/GH2Gr72EyyfxbWAo5bPwFyX/AYVM4NA4AAAAASUVORK5CYII=" InformativeScreenshot="fcbbc29b630f79903e1b025e98347323.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="636,1767" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ANMOLAGRI Page'" sap:VirtualizedContainerService.HintSize="594,1673" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="23d09900b485033bb125e8f615236808" Selector="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;">
+                                          <ui:BrowserScope.Body>
+                                            <ActivityAction x:TypeArguments="x:Object">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                              </ActivityAction.Argument>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="560,1527" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1435" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ClickType="Single" DisplayName="Click 'Company'" sap:VirtualizedContainerService.HintSize="476,156" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/company/anmolagriculture-farmers-producer-company-limited/U01100BR2020PTC045849" DesignTimeRectangle="262, 223, 98, 44" ElementType="Text" FriendlyName="'Company'" FullSelectorArgument="&lt;webctrl aria-role='tab' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='tab' tag='A' type='' class='nav-link' aaname='Company' check:innerText='Company' /&gt;" Guid="9f457f6a-bd9f-498a-bddd-311e40c94bdc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAwCAYAAADjCA+IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOMSURBVHhe7ZjBS9tQHMf7nw122lkQdtgf4BjbaRN28eRh1IMHCwNPHlaGoiJIPXRjlCKBWbFD2QKSlra2psZG8C/47r3kveQlRtu1iXmyX+FDzXvv92vy++T3EiyAPlp+SIymn8Lt7S0I/SgcHR2B0I+C67og8mWkIMdITM5IIdcjFw5DjpOYHIlLGZIYPZBipJTL0U0wR2JyItIt7Pvy2sUFicmfQAzjineLe4PONYnJHVUM38b6rFvaJCZ/ksS0SEz+xMXw54vlkJjcITGaQmI0JX0xgw563XH0k2OJgJTF1FGcf4u5Nx/w8gHmXi2hfJ4UT0gyELOGmjNE72II1+mjNxDfQzY/7MN2XNRKs4mplV7j+bzC4g7MhHVPmWzEdA1sfDXQO62gWDmD3djBhsG2MGMTe6eziOH5fRnFQzF2uObLKdVja5822YgZmKgZJux2E99+deBaDdTMIWzTwHF7ejF+p/wf22BGYpo4qDaZmDq2DjuwWefsNZiYRgUHrKjTiRHdMq4zznewILqKs7BtijkT5UUevxZ0nZdLdhwn2BLl2npk2wy6VM7LOOWcvPUsTzkWZ24veX+H5xOOhXlDMhLTQHm3Afv8B9a/s85JYysTBVcv7A5SiiywKLofExbTK0QgRJyLOPaLFK71Y+UWyq6N5ZXFV39DFjcQ6cmSeXic+DtB/p3rYGQjxrFwfGLBvTiD8Zu9GqexlUWKnDDP8O9ANbdajHhh4h3oH0ckBmsZMQEhapwU4wvkx5FzUnOIm+huPp9sxHSrWF6tonfyBe/KTfSqq1iudtDaX8X6yWwdc98dxokXJTqWphgxz+MFE4lRftMbV/PHyKhj2Ouy95osv9N5XfYv+v7YLDsmzC2lyOKrcePEyGO+JoxJIhsxVgUfP1XQis239ldQ+jm9GPXBHmwB6hY3yTPmX8TIgkbyRuNkoScVE15DuCaJbMTIY+MzXngnwU58lz1zxPjUYjxk0RT41sDuZG9ekef9bnBXTiFmcUnJFS+2P87XcxkTi5G5g99NJlsx4o6NFmhWMY9BXGKKeDUZf/0pi2li/X3y/8eirGDLSorXhazEiC6dIG/KYoi0IDGaQmI0hcRoConRFBKjKSRGU0iMppAYTSExmkJiNIXEaAqJ0RQSoykkRlMmFnPpjIhHZCDoM7pXI1hXLv7YTMizoo8UQzwu93UMicmZh8UU8RfcrHDBInsmigAAAABJRU5ErkJggg==" InformativeScreenshot="8864d1aebf0956f1d4398811c8d6407f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,1147" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ANMOLAGRI Page'" sap:VirtualizedContainerService.HintSize="434,1055" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="09debd3c0451224f72eb35cfa1158b2c" Selector="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;">
+                                                      <ui:BrowserScope.Body>
+                                                        <ActivityAction x:TypeArguments="x:Object">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                                          </ActivityAction.Argument>
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,909" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Director Name' ReferenceIdx='0' Name='Director Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Director DIN' ReferenceIdx='1' Name='Director DIN' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Designation' ReferenceIdx='2' Name='Designation' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Appointment Date' ReferenceIdx='3' Name='Appointment Date' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Total Directorships' ReferenceIdx='4' Name='Total Directorships' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Disqualified u/s 164(2)' ReferenceIdx='5' Name='Disqualified u/s 164(2)' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DIN Deactivated' ReferenceIdx='6' Name='DIN Deactivated' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Director Name' attr='text' /&gt;&lt;column name='Director DIN' attr='text' /&gt;&lt;column name='Designation' attr='text' /&gt;&lt;column name='Appointment Date' attr='text' /&gt;&lt;column name='Total Directorships' attr='text' /&gt;&lt;column name='Disqualified u/s 164(2)' attr='text' /&gt;&lt;column name='DIN Deactivated' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                                              <uix:NExtractData.Target>
+                                                                <uix:TargetAnchorable DesignTimeRectangle="263, 454, 1073, 265" FriendlyName="'Director NameDirector'" FullSelectorArgument="&lt;webctrl parentid='currentDirectorsContainer' tag='TABLE' /&gt;" Guid="78bece82-d56c-4e8a-92e2-21c1b41ef3c9" InformativeScreenshot="2e431406318a6a7a561c2735acdd3538.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                                              </uix:NExtractData.Target>
+                                                            </uix:NExtractData>
+                                                            <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" StartingCell="[&quot;E&quot;+counter.ToString]" WorkbookPath="E:\New_Scaraping_Data.xlsx" />
+                                                            <uix:NGetText DisplayName="Get Text 'Email ID'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="28b5a5a2-5d32-4427-8328-8c89f55db231" Version="V1">
+                                                              <uix:NGetText.Target>
+                                                                <uix:TargetAnchorable BrowserURL="https://www.instafinancials.com/company/anmolagriculture-farmers-producer-company-limited/U01100BR2020PTC045849" DesignTimeRectangle="1014, 531, 322, 44" ElementType="Text" FriendlyName="'FPOBIHAR2018@GMAIL.COM'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='5' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="b413bfbc-b26a-4e90-9771-0b4d7e415746" InformativeScreenshot="36afdf4942a278fe0f1666073894af17.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ANMOLAGRICULTURE FARMERS PRODUCER COMPANY LIMITED - U01100BR2020PTC045849' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                                                  <uix:TargetAnchorable.Anchors>
+                                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                      <uix:Target DesignTimeRectangle="799, 531, 215, 44" ElementType="Text" FriendlyName="'Email ID'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='5' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='Email ID' check:innerText='Email ID' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANsAAAAwCAYAAACYAA8BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGpSURBVHhe7dhNboJQGIZR9uS6ylaIO9GVNO6iSYeMGN0iP1bbNKkKb0lzTvIlUilhwJN7seq6rhhj1p+qbdtijFl/qgJEiA1CxAYhYoMQsUGI2CBEbBAiNggRG4SIDULEBiFigxCxQYjYIERsECI2CBEbhGwnttem7Ha70rz2n98OpZ4/wz9xV2yn/W4I4mZeDuV9+v4Z78e6v17dB9Zf7YfY5nMOb8NRObysdz+wtAdia8ppOl7NPbHdxHUqzRBd4B7hTgvFNj749b4ZIjmvMOcV6nPlmQPpTSHNK9ElqGEbOZ33cGxnU3B7ubEtT24j5/BuH/wxij6+43A0fjc9/KfjVRxDYNM1Fovtp7/D31p0ZbusJtfh9Ib/uzz807mXYKfzxMY/F47tSwjX5y0Wm20k2xSObQxh3F7O11syNj+QsF1PvrP1c71i/WIbOb/Pnafp39/qZ2Ob72OebysdbMNdsQGPExuEiA1CxAYhYoMQsUGI2CBEbBAiNggRG4SIDULEBiFigxCxQYjYIERsECI2CKnati3GmPWn6rquGGPWH7EZE5mufAD7uP3Mqc8dCQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                                    </scg:List>
+                                                                  </uix:TargetAnchorable.Anchors>
+                                                                </uix:TargetAnchorable>
+                                                              </uix:NGetText.Target>
+                                                              <uix:NGetText.Text>
+                                                                <OutArgument x:TypeArguments="x:String">[emailget]</OutArgument>
+                                                              </uix:NGetText.Text>
+                                                            </uix:NGetText>
+                                                            <ui:WriteCell Cell="[&quot;E&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet1" Text="[cincomp]" WorkbookPath="E:\New_Scaraping_Data.xlsx" />
+                                                            <ui:WriteCell Cell="[&quot;F&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[emailget]" WorkbookPath="E:\New_Scaraping_Data.xlsx" />
+                                                          </Sequence>
+                                                        </ActivityAction>
+                                                      </ui:BrowserScope.Body>
+                                                    </ui:BrowserScope>
+                                                  </Sequence>
+                                                </Sequence>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:BrowserScope.Body>
+                                        </ui:BrowserScope>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMTSURBVDhPjZF9TMxxHMc/ebg2ZlNhDRsz0cbFqiviFAnnVkwPztWSowcxas1ixiTbWaFNOZq6ZFpIHqYlXVKap6E6qY4tP9WdSq6n6+7ort5+d04P4w+v7bPv5/v9fD7v7/u7L43DzrZaAUCGXLnYmJ/ji2/dttP/BF4+1GE/3Ul3OL5iIClC1kw01Vb6w4TLLEy83ZGox8NVPBAnMvbHbdH0BLuuQsh8W9XaOz7GEgvIzqDvgUKngYOSct3RGOhORUGfIZG1xc3jWJ7FMtrLMpqPJiY2tB5ccZ+AbzBeuwCD/DgGU9w0RtkSb1yZY2n5p4AVxOyj3qBAB93B/RV923kYTA2HPj0AxhwvDCmiZDopTbG5+MNEgR/stj/UT9Qf4avXp0XDmBeFn3fDYKoWwfzIRT1c5c5D3Txb9xhWFeSupraEhY4DuXvKDVkBMGR4wlx7FsPNiRh544yRxnUYbhVmddb99SNW7Ix7ibrStu7qOrZcbygMx9ADPsxNWzDyiQeo1mJY7Y+hrpkak3alN7DSOmOdtAClgNSxzg7arPDHvekh6DvqCpMiGGZ1LEa69mCoYwN+aGbC1CuAucfnUu+XURe/RZCxmF5KuTvrU7kGZX4UPsh2QlW6FP3dydB+k6D762xou4PQ0eGP1nZnTQOzgLW16LfAtOudRAfuO/DPnihLlO/AqSJ/XH2VgJJGEWpaxHj7WQCVOhSNbTvw4uMyVDW7oaTBI0um8LC4sCPO6QqaGywPm3rs+uCMzHPgFkaCXypEytskXGtKh6IlBWWq3ezwcjxTcfFA6Yl7Sp66tMGdN4hNRJyIollOIQWlnBN5oOzToIJwON0TIqRciJymTFx+fxKZr9egssmNHfTEnTpviwN2v+JizTsXDk2WFO+zO1SmI6kClFkMyj+MOcWBWPFwM0Q1idhWKUFYuT+Sn/lC+nwdst/4oKiex4q4t9+u9fIj++j7tyi5upWklQxdKWZIfp6ZdCOYoZuBjN/TI20bK6JbV5VsZgIeCZhIxSYm/slGJrl6PcOKMRdf8c/8Am6ErAhraOwXAAAAAElFTkSuQmCC" InformativeScreenshot="2ebe88ba4ff50b1f8d399c83889f8380.png" Selector="&lt;html app='chrome.exe' title='InstaFinancials - Indian OPC, LLP, Private, Public Company Information' /&gt;" Url="https://www.instafinancials.com/?utm_source=404_html&amp;utm_medium=Insta-404-page&amp;utm_campaign=InstaHomePage&amp;utm_content=404_html-404page-home_html" />
+                                </uix:NApplicationCard.TargetApp>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c65cdd98e5d9a0f8ec067382a6aed190.png" Selector="&lt;html app='chrome.exe' title='Check MCA Company Name Availability Details Search Status' /&gt;" Url="https://www.startupgali.com/company-list/?&amp;page=1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
